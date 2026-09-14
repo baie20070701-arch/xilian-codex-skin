@@ -1,0 +1,30 @@
+{
+  "id": "custom-mu0wrtsv",
+  "image": {
+    "file": "background.jpg",
+    "mimeType": "image/jpeg",
+    "originalName": "昔涟-无水印.jpg"
+  },
+  "name": "昔涟 · 云端回响（完整修复）",
+  "schemaVersion": 1,
+  "settings": {
+    "accent": "#e67db5",
+    "background": "#fff6fb",
+    "border": "#ebc9da",
+    "composerOpacity": 92,
+    "homeOpacity": 50,
+    "homeOverlay": 12,
+    "imageBlur": 0,
+    "imageFit": "cover",
+    "mediaType": "image",
+    "muted": "#8a6d85",
+    "panel": "#fffdfd",
+    "panelBlur": 16,
+    "sendActive": "#e67db5",
+    "sendInactive": "#d9b8ca",
+    "sidebarOpacity": 94,
+    "text": "#51364f",
+    "version": "2.7.1"
+  },
+  "version": "2.7.1"
+}
