@@ -1,0 +1,30 @@
+{
+  "id": "custom-xilian-comfort",
+  "image": {
+    "file": "background.jpg",
+    "mimeType": "image/jpeg",
+    "originalName": "昔涟-无水印.jpg"
+  },
+  "name": "昔涟 · 云端回响（护眼版）",
+  "schemaVersion": 1,
+  "settings": {
+    "accent": "#c66f9f",
+    "background": "#ece3e9",
+    "border": "#caa7bd",
+    "composerOpacity": 100,
+    "homeOpacity": 48,
+    "homeOverlay": 12,
+    "imageBlur": 0,
+    "imageFit": "cover",
+    "mediaType": "image",
+    "muted": "#6f5e6b",
+    "panel": "#efe4ec",
+    "panelBlur": 16,
+    "sendActive": "#c66f9f",
+    "sendInactive": "#b99aae",
+    "sidebarOpacity": 99,
+    "text": "#40323e",
+    "version": "2.7.2"
+  },
+  "version": "2.7.2"
+}

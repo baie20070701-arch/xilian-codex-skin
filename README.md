@@ -2,14 +2,26 @@
 
 A XiLian-inspired glass theme and 3D chibi pet for the Codex desktop app.
 
+The repository now ships two theme variants. The **Eye-comfort Edition（护眼版）** is installed as the default active theme.
+
 ![Theme hero](preview/theme-hero.webp)
 
 ![Pet animation sheet](preview/pet-contact-sheet.png)
 
+## Theme variants
+
+| Directory | Theme name | Description |
+| --- | --- | --- |
+| `theme/` | 昔涟 · 云端回响（完整修复） | Original bright pink/lavender glass theme with the full-screen XiLian watermark. |
+| `theme-eye-comfort/` | 昔涟 · 云端回响（护眼版） | Lower-glare mauve-pink palette, deeper reading layers, stronger surface separation, and a clearer full-screen character background. |
+
+The eye-comfort variant keeps the same fonts, pet, and layout while reducing glare, preserving text contrast, and avoiding the pale washed-out look.
+
 ## Features
 
 - Pink, lavender, and glass-style Codex theme
-- Optional full-screen XiLian image watermark layer
+- Eye-comfort Edition with a lower-glare, low-saturation palette
+- Full-screen XiLian image watermark layer
 - Custom sidebar, conversation bubbles, composer, cards, and focus states
 - Codex v2 pet atlas with 8 columns and 11 animation rows
 - Idle, directional movement, waving, jumping, waiting, processing, review, and look states
@@ -18,11 +30,13 @@ A XiLian-inspired glass theme and 3D chibi pet for the Codex desktop app.
 ## Repository layout
 
 ```text
-theme/    CodexSkin theme files
-pet/      Codex custom pet files
-preview/  Preview images
-scripts/  Portable pet atlas builder
+theme/                Original CodexSkin theme files
+theme-eye-comfort/    Eye-comfort Edition theme files
+pet/                  Codex custom pet files
+preview/              Preview images
+scripts/              Portable pet atlas builder
 install.sh
+CHANGELOG.md
 ```
 
 ## Requirements
@@ -40,13 +54,16 @@ cd xilian-codex-skin
 ./install.sh
 ```
 
-The installer copies:
+The installer copies both themes and activates the **护眼版** by default:
 
 - `pet/` to `~/.codex/pets/xilian/`
 - `theme/` to `~/.codex-skin-app/themes/custom-mu0wrtsv/`
+- `theme-eye-comfort/` to `~/.codex-skin-app/themes/custom-xilian-comfort/`
 - the active CodexSkin theme configuration to `~/.codex-skin-app/settings.json`
 
 Restart CodexSkin after installation. In Codex, open **Settings → Pets**, refresh, and select **昔涟 · 3D Q版**.
+
+To switch back to the original theme, select **昔涟 · 云端回响（完整修复）** in CodexSkin.
 
 ## Build a pet atlas from a 4×2 pose sheet
 
@@ -76,9 +93,10 @@ The script writes a Codex-compatible `spritesheet.webp`, `spritesheet.png`, and 
 ```bash
 rm -rf ~/.codex/pets/xilian
 rm -rf ~/.codex-skin-app/themes/custom-mu0wrtsv
+rm -rf ~/.codex-skin-app/themes/custom-xilian-comfort
 ```
 
-Remove `custom-mu0wrtsv` from `~/.codex-skin-app/manifest.json` if it remains listed.
+Remove the matching theme ids from `~/.codex-skin-app/manifest.json` if they remain listed.
 
 ## License and assets
 
